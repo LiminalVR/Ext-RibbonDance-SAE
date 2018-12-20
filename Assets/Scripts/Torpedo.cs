@@ -6,6 +6,7 @@ public class Torpedo : MonoBehaviour {
 
     public GameObject frontObject;
     public float distance;
+    public float Speed;
 
     public float setDistance = 3;
 
@@ -49,11 +50,11 @@ public class Torpedo : MonoBehaviour {
 
         if(running == true)
         {
-            distance += .5f;
+            distance += Speed;
         }
         else
         {
-            distance -= .5f;
+            distance -= Speed;
         }
         
         if(distance <= setDistance)

@@ -25,7 +25,9 @@ public class follow : MonoBehaviour
         {
          //Debug.Log("Incoming");
          // Move our position a step closer to the target.
+        transform.LookAt(target.transform);
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
+            
         }   
     }
 }
