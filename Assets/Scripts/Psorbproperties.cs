@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OrbProperties : MonoBehaviour {
+public class Psorbproperties : MonoBehaviour {
 
     public Color Tintset;
     public Color Groundset;
     public float Expo;
-    private Renderer X;
-    public ParticleSystem y;
+    private ParticleSystem X;
+    private Renderer y;
     public float revive;
     public float settime = 5f;
 
     void Start()
     {
-        X = GetComponent<Renderer>();
+        X = GetComponent<ParticleSystem>();
+        y = GetComponent<Renderer>();
         revive = settime;
     }
     void Update()
@@ -30,14 +31,16 @@ public class OrbProperties : MonoBehaviour {
     {
         if (other.gameObject.tag == "Wisp")
         {
-            X.enabled = false;
-            y.Stop();
+            Debug.Log("Hit");
+            y.enabled = false;
+            //X.Stop();
         }
     }
     void Revive()
     {
-        X.enabled = true;
-        y.Play();
+        //X.Play();
+        y.enabled = true;
+        Debug.Log("Return");
         revive = settime;
     }
 }
