@@ -4,7 +4,7 @@
 
 **Description:** 
 
-**Experience Type:** 
+**Experience Type:** Calm
 
 **Unity Version Used:** 2017.2.0p4 (64-bit)
 
@@ -12,7 +12,7 @@
 
 ## Creator Details
 
-**Team Name:** 
+**Team Name:** Luigi Salvador
 
 **Team Members:** Luigi Salvador
 
